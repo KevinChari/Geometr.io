@@ -27,7 +27,7 @@ header {
     width: 100%;
     min-width: 320px;
     height: 130px;
-    border-bottom: 1px solid var(--bordes);
+    /* border-bottom: 1px solid var(--bordes); */
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -73,8 +73,9 @@ main {
     margin-bottom: 30px;
     flex-direction: column;
     align-items: center;
-    border: 2px solid var(--bordes);
-    border-radius: 6px;
+    /* border: 1px solid var(--bordes); */
+    box-shadow: 0px 1px 10px 1px #57198ad8 ;
+    border-radius: 10px;
 }
 
 .main__cuadrado h2 {

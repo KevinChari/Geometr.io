@@ -1,3 +1,13 @@
+
+:root {
+    /* colores */
+    --tiulos:#2a0950;
+    --bordes: #57198a;
+    --subtitulos: #322338;
+    --inputs: #E7F5FF;
+    --inputsbackgr: #9d50b4;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,29 +19,33 @@ html {
     font-family: 'Lexend Deca', sans-serif;
 }
 
+
 header {
-    background-color: #fa4325;
     position: relative;
     display: flex;
+    flex-direction: column;
     width: 100%;
     min-width: 320px;
-    height: 50px;
+    height: 130px;
+    border-bottom: 1px solid var(--bordes);
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
 }
 
 header img{
-    width: 40px;
-    height: 40px;
+    width: 130px;
+    height: 60px;
     margin-top: 5px;
     align-self: center;
 }
 
 header h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: bold;
     line-height: 2.6rem;
+    color: var(--tiulos);
 }
 
 main {
@@ -44,12 +58,79 @@ main {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding-top: 20px;
+    padding-top: 25px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .main__cuadrado {
+    width: 280px;
+    min-width: 280px;
+    height: auto;
     display: flex;
+    padding: 10px;
+    margin-bottom: 30px;
     flex-direction: column;
-    padding-bottom: 20px;
+    align-items: center;
+    border: 2px solid var(--bordes);
+    border-radius: 6px;
+}
+
+.main__cuadrado h2 {
+    margin-bottom: 20px;
+    padding-top: 6px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--tiulos);
+}
+
+.main__cuadrado  label {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: var(--subtitulos);
+    font-weight: 600;
+}
+
+.main__cuadrado input {
+    width: 210px;
+    height: 25px;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid var(--bordes);
+    text-align: center;
+}
+::placeholder {
+    color: #706f6f;
+}
+
+.main__cuadrado .main__cuadrado-perimetro {
+    width: 110px;
+    height: 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: var(--inputsbackgr);
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+    color: var(--tiulos);
+}
+
+footer {
+    height: 35px;
+    display: flex;
+    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+    color: var(--tiulos);
 }

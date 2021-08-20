@@ -14,7 +14,7 @@
     <header>
         <img src="./assets/imgs/logo.png" alt="una hoja de otoño color naranja">
         <h1>
-            Figuras geométricas
+            GeometryCalc
         </h1>
     </header>
     <main>
@@ -24,56 +24,59 @@
                 <label for="InputCuadrado">
                     Escribe cuánto mide cada lado de tu cuadrado:
                 </label>
-                <input id="InputCuadrado" type="number">
+                <input id="InputCuadrado" type="number" placeholder="Inserte números..">
                 <button class="main__cuadrado-perimetro" type="button" onclick="calcularPerimetroCuadrado()">
-                    Calcular el perímetro
+                   Perímetro
                 </button>
-                <button class="main__cuadrado-area" type="button" onclick="calcularAreaCuadrado()">
-                    Calcular el área
+                <button class="main__cuadrado-area main__cuadrado-perimetro" type="button" onclick="calcularAreaCuadrado()">
+                    Área
                 </button>
             </form>
 
-            <form>
+            <form class="main__cuadrado">
                 <h2>Triángulo</h2>
                 <label for="InputTriangulo">
                     Cateto 1:
                 </label>
-                <input id="InputTriangulo" type="number">
+                <input id="InputTriangulo" type="number" placeholder="Inserte números..">
                 <label for="InputTriangulo2">
                     Cateto 2:
                 </label>
-                <input id="InputTriangulo2" type="number">
+                <input id="InputTriangulo2" type="number" placeholder="Inserte números..">
                 <label for="InputTriangulo3">
                     Base:
                 </label>
-                <input id="InputTriangulo3" type="number">
+                <input id="InputTriangulo3" type="number" placeholder="Inserte números..">
                 <label for="InputTriangulo4">
                     Altura:
                 </label>
-                <input id="InputTriangulo4" type="number">
-                <button type="button" onclick="calcularPerimetroTriangulo()">
-                    Calcular el perímetro
+                <input id="InputTriangulo4" type="number" placeholder="Inserte números..">
+                <button class="main__cuadrado-perimetro" type="button" onclick="calcularPerimetroTriangulo()">
+                    Perímetro
                 </button>
-                <button type="button" onclick="calcularAreaTriangulo()">
-                    Calcular el área
+                <button class="main__cuadrado-perimetro" type="button" onclick="calcularAreaTriangulo()">
+                    Área
                 </button>
             </form>
 
-            <form>
+            <form class="main__cuadrado">
                 <h2>Círculo</h2>
                 <label for="InputCirculo">
                     Radio del círculo:
                 </label>
-                <input id="InputCirculo" type="number">
-                <button type="button" onclick="calcularPerimetroCirculo()">
-                    Calcular el perímetro
+                <input id="InputCirculo" type="number" placeholder="Inserte números..">
+                <button class="main__cuadrado-perimetro" type="button" onclick="calcularPerimetroCirculo()">
+                    Perímetro
                 </button>
-                <button type="button" onclick="calcularAreaCirculo()">
-                    Calcular el área
+                <button class="main__cuadrado-perimetro" type="button" onclick="calcularAreaCirculo()">
+                    Área
                 </button>
             </form>
         </section>
     </main>
+    <footer>
+        <a href="https://platzi.com/home">Nunca pares de Aprender!</a>
+    </footer>
 	<script src="./figuras.js"></script>
 </body>
 </html>

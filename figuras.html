@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Figuras geométricas | Curso Práctico de JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="./assets/imgs/logo.svg" alt="una hoja de otoño color naranja">
+        <img src="./assets/imgs/logo.png" alt="una hoja de otoño color naranja">
         <h1>
             Figuras geométricas
         </h1>
     </header>
     <main>
-        <section>
-            <h2>Calcula el área y perímetro de un cuadrado</h2>
-            <form>
+        <section class="main__container">
+            <form class="main__cuadrado">
+                <h2>Cuadrado</h2>
                 <label for="InputCuadrado">
                     Escribe cuánto mide cada lado de tu cuadrado:
                 </label>
                 <input id="InputCuadrado" type="number">
-                <button type="button" onclick="calcularPerimetroCuadrado()">
+                <button class="main__cuadrado-perimetro" type="button" onclick="calcularPerimetroCuadrado()">
                     Calcular el perímetro
                 </button>
-                <button type="button" onclick="calcularAreaCuadrado()">
+                <button class="main__cuadrado-area" type="button" onclick="calcularAreaCuadrado()">
                     Calcular el área
                 </button>
             </form>
 
-            <h2>Calcula el área y perímetro de un Triángulo</h2>
             <form>
+                <h2>Triángulo</h2>
                 <label for="InputTriangulo">
                     Cateto 1:
                 </label>
@@ -56,8 +59,8 @@
                 </button>
             </form>
 
-            <h2>Calcula el área y perímetro de un círculo</h2>
             <form>
+                <h2>Círculo</h2>
                 <label for="InputCirculo">
                     Radio del círculo:
                 </label>

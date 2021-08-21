@@ -5,3 +5,17 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.main__cuadrado input:hover{
+    box-shadow: 0 1px 6px 0 #b168c7;
+}
+
+.main__cuadrado .main__cuadrado-perimetro:hover {
+    background-color: #a55ebb;
+    transition: color 1s cubic-bezier(.25,1,.25,1),background-color 1s cubic-bezier(.25,1,.25,1);
+}
+
+footer a:hover {
+    color: #6b327c;
+    transition: color 1s cubic-bezier(.25,1,.25,1),background-color 1s cubic-bezier(.25,1,.25,1);
+}

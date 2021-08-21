@@ -58,29 +58,53 @@ main {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding-top: 25px;
+    padding-top: 60px;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
 .main__cuadrado {
+    position: relative;
     width: 280px;
     min-width: 280px;
     height: auto;
     display: flex;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     flex-direction: column;
     align-items: center;
     /* border: 1px solid var(--bordes); */
     box-shadow: 0px 1px 10px 1px #57198ad8 ;
     border-radius: 10px;
 }
+.product-detail--cuadrado-logo {
+    position: absolute;
+    width: 82px;
+    height: 73px;
+    top: -35px;
+    left: calc(50% - 40px);
+    background-image: url(../assets/imgs/cuadrado.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo--triangulo {
+    background-image: url(../assets/imgs/triang.gif);
+    width: 70px;
+    height: 82px;
+    top: -45px;
+    left: calc(50% - 35px);
+}
+
+.logo--circulo {
+    background-image: url(../assets/imgs/circulo.png);
+}
 
 .main__cuadrado h2 {
     margin-bottom: 20px;
-    padding-top: 6px;
+    padding-top: 28px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
@@ -123,7 +147,7 @@ main {
 }
 
 footer {
-    height: 35px;
+    height: 45px;
     display: flex;
     background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
     font-size: 1.5rem;

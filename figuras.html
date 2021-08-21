@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas | Curso Práctico de JavaScript</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
@@ -59,9 +60,6 @@
                 <button class="main__cuadrado-perimetro" type="button" onclick="calcularAreaTriangulo()">
                     Área
                 </button>
-                <button class="main__cuadrado-perimetro" type="button">
-                    Altura
-                </button>
             </form>
 
             <form class="main__cuadrado">
@@ -76,6 +74,26 @@
                 </button>
                 <button class="main__cuadrado-perimetro" type="button" onclick="calcularAreaCirculo()">
                     Área
+                </button>
+            </form>
+
+            <form class="main__cuadrado">
+                <span class="product-detail--cuadrado-logo logo--triangulo"></span>
+                <h2>Triángulo Isósceles</h2>
+                <label for="InputTrianguloIso">
+                    Cateto 1:
+                </label>
+                <input id="InputTrianguloIso" type="number" placeholder="Inserte números..">
+                <label for="InputTrianguloIso2">
+                    Cateto 2:
+                </label>
+                <input id="InputTrianguloIso2" type="number" placeholder="Inserte números..">
+                <label for="InputTrianguloIso3">
+                    Base:
+                </label>
+                <input id="InputTrianguloIso3" type="number" placeholder="Inserte números..">
+                <button class="main__cuadrado-perimetro" type="button" onclick="calcularAlturaTriangulo()">
+                    Altura
                 </button>
             </form>
         </section>

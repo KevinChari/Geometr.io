@@ -42,6 +42,16 @@ function perimetroTriangulo(lado1, lado2, base) {
 function areaTriangulo(base, altura) {
     return (base * altura) / 2;
 }
+
+function altura22(lado1, lado2, base) {
+    if(lado1 === lado2 && lado1 != base){
+        const altTriIso = Math.sqrt((lado1**2) - (base**2/ 4));
+        return(`La altura del triángulo isósceles es de ${altTriIso} centimetros`)
+    }
+    else{
+        return('No es un triángulo isósceles. OJO: Para que sea un triángulo isósceles los lados deben tener un valor igual')
+    }
+}
 //console.log("El área del triángulo es: " + areaTriangulo + "cm^2");
 
 console.groupEnd();
@@ -132,4 +142,20 @@ function calcularAreaCirculo() {
 
     const area = areaCirculo(valuecir);
     alert(area);
+}
+
+// Aquí el HTML del Triángulo Isósceles
+
+function calcularAlturaTriangulo(){
+    const inputTri1 = document.getElementById("InputTrianguloIso");
+    const inputTri2 = document.getElementById("InputTrianguloIso2");
+    const inputTri3 = document.getElementById("InputTrianguloIso3");
+    const valueTri1 = Number(inputTri1.value);
+    const valueTri2 = Number(inputTri2.value);
+    const valueTri3 = Number(inputTri3.value);
+
+    const alturaTriI = altura22(valueTri1, valueTri2, valueTri3);
+    alert(alturaTriI);
+    /* const valorTri = calcAlt(valueTri1, valueTri2, valueTri3);
+    alert(valorTri); */
 }

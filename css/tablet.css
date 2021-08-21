@@ -1,0 +1,7 @@
+.main__container {
+    width: 930px;
+    margin: 0 auto;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

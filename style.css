@@ -26,8 +26,8 @@ header {
     flex-direction: column;
     width: 100%;
     min-width: 320px;
-    height: 130px;
-    /* border-bottom: 1px solid var(--bordes); */
+    height: auto;
+    padding: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -35,14 +35,13 @@ header {
 }
 
 header img{
-    width: 130px;
-    height: 60px;
-    margin-top: 5px;
+    width: 200px;
+    height: 100px;
     align-self: center;
 }
 
 header h1 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--tiulos);
@@ -84,14 +83,14 @@ main {
     height: 73px;
     top: -35px;
     left: calc(50% - 40px);
-    background-image: url(../assets/imgs/cuadrado.png);
+    background-image: url(./assets/imgs/cuadrado.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .logo--triangulo {
-    background-image: url(../assets/imgs/triang.gif);
+    background-image: url(./assets/imgs/triang.gif);
     width: 70px;
     height: 82px;
     top: -45px;
@@ -99,7 +98,7 @@ main {
 }
 
 .logo--circulo {
-    background-image: url(../assets/imgs/circulo.png);
+    background-image: url(./assets/imgs/circulo.png);
 }
 
 .main__cuadrado h2 {

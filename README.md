@@ -9,7 +9,7 @@
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JS con HTML.
 
-## TALLER #1: decuentos en porcentajes
+## TALLER #2: decuentos en porcentajes
 
 - Primer paso: definir las fórmulas
 - Segundo paso: implementar las fórmulas en JavaScript 

@@ -20,17 +20,31 @@
 
 
     <form>
-        <label for="InputPrice">Escribe el precio de tu producto:</label>
-        <input id="InputPrice" type="number">
+        <label for="InputPrice">Precio de tu producto:</label>
+        <div>
+            <input id="InputPrice" type="number">
+        </div>
 
-        <label for="InputDiscound">Escribe el descuento de tu producto:</label>
-        <input id="InputDiscound" type="number">
+        <label for="InputDiscound">Descuento de tu producto:</label>
+        <div>
+            <input id="InputDiscound" type="number">
+        </div>
 
         <button type="button" onclick="onclickButtonPriceDiscount()">
             Calcular el precio con descuento
         </button>
 
+        <label for="InputCoupon">Tienes algún CUPON? </label>
+        <div>
+            <input id="InputCoupon" type="text">
+        </div>
+
+        <button type="button" onclick="onclickButtonPriceCupon()">
+            Descuento + CUPON
+        </button>
+
         <p id="ResultP"></p>
+        <p id="ResultPC"></p>
     </form>
     </section>
 

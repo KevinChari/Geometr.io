@@ -91,7 +91,7 @@ function onclickButtonPriceCupon() {
     const precioConDescuentoCupon = calcularPrecioConDescuentoCupon(priceValue1, discountValue1, descuento);
 
     const ResultPC = document.getElementById("ResultPC");
-    ResultPC.innerText = "El precio con descuento + CUPON es: $" + precioConDescuentoCupon;
+    ResultPC.innerText = "El precio con CUPON TOTAL es: $" + precioConDescuentoCupon;
 }
 
 

@@ -1,3 +1,14 @@
+
+:root {
+    /* colores */
+    --tiulos:#500921;
+    --bordes: #8a1948;
+    --subtitulos: #1e1e1f;
+    --inputs: #E7F5FF;
+    --inputsbackgr: #ba6fd1;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +17,9 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Lexend Deca', sans-serif;
 }
+
 header {
     position: relative;
     display: flex;
@@ -21,4 +34,68 @@ header img {
     width: 100%;
     height: 120px;
     align-self: center;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+main .main__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--tiulos);
+}
+
+.main__container form {
+    position: relative;
+    width: 280px;
+    min-width: 280px;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 1px 10px 1px #57198ad8 ;
+    border-radius: 10px;
+}
+
+.label__text {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: var(--subtitulos);
+    font-weight: 600;
+}
+
+form .form__container-input {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    margin-bottom: 12px;
+    border: 1px solid var(--bordes);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+form .form__container-input input {
+    width: 80%;
+    height: 23px;
+    outline: none;
+    border: none;
+    text-align: center;
 }

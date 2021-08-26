@@ -52,6 +52,7 @@ main .main__container {
 }
 
 .main__container h2 {
+    width: 300px;
     margin-bottom: 30px;
     font-size: 2rem;
     font-weight: bold;

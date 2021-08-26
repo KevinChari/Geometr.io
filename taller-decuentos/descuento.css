@@ -4,8 +4,6 @@
     --tiulos:#500921;
     --bordes: #8a1948;
     --subtitulos: #1e1e1f;
-    --inputs: #E7F5FF;
-    --inputsbackgr: #ba6fd1;
 }
 
 
@@ -32,7 +30,7 @@ header {
 
 header img {
     width: 100%;
-    height: 120px;
+    height: 135px;
     align-self: center;
 }
 
@@ -46,18 +44,19 @@ main .main__container {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
 .main__container h2 {
-    margin-bottom: 20px;
-    font-size: 2.4rem;
+    margin-bottom: 30px;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 2.6rem;
-    color: var(--tiulos);
+    color: var(--subtitulos);
 }
 
 .main__container form {
@@ -66,11 +65,23 @@ main .main__container {
     min-width: 280px;
     height: auto;
     display: flex;
-    padding: 10px;
+    padding: 15px;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 1px 10px 1px #57198ad8 ;
+    box-shadow: 0 4px 4px -1px rgb(0 0 0 / 60%), 0 4px 6px 1px rgb(0 0 0 / 30%), 0 1px 2px 1px rgb(0 0 0 / 0%) inset, 0 18px 32px -2px rgb(255 255 255 / 10%) inset;
     border-radius: 10px;
+}
+
+.main__img-des {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -25px;
+    left: calc(80% - 10px);
+    background-image: url(../assets/imgs/promotion-ribbon-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .label__text {
@@ -82,20 +93,82 @@ main .main__container {
 }
 
 form .form__container-input {
-    width: 60%;
+    width: 80%;
     height: 30px;
     display: flex;
     margin-bottom: 12px;
-    border: 1px solid var(--bordes);
+    border: 1px solid #fa777e;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+}
+::placeholder {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #5a5a5a;
+}
+
+.form__button {
+    width: auto;
+    height: 35px;
+    padding: 0.8em 1.6em;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    border-radius: 0.2666666667em;
+    box-shadow: 0 3px 0 0 #b3004a, 0 4px 4px -1px rgb(0 0 0 / 60%), 0 4px 6px 1px rgb(0 0 0 / 30%), 0 1px 2px 1px rgb(0 0 0 / 0%) inset, 0 18px 32px -2px rgb(255 255 255 / 10%) inset;
+    background-image: linear-gradient(
+    -45deg, #ff002b, #ff131d);
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+    color: #E6EAEF;
 }
 
 form .form__container-input input {
     width: 80%;
     height: 23px;
+    background-color: transparent;
     outline: none;
     border: none;
     text-align: center;
+}
+
+
+#ResultP {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: var(--subtitulos);
+    font-weight: 600;
+}
+
+#ResultPC {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: var(--subtitulos);
+    font-weight: 600;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #ff131d;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #E6EAEF;
 }

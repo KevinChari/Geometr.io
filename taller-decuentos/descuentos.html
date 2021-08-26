@@ -15,39 +15,47 @@
         <img src="../assets/imgs/desFonds.jpg" alt="">
     </header>
 
-<main>
-    <section class="main__container">
-        <h2>Calcula el descuento de tus productos </h2>
-        <form>
-            <label class="label__text" for="InputPrice">Precio:</label>
-            <div class="form__container-input">
-                <input id="InputPrice" type="number" placeholder="Inserte números..">
-            </div>
+    <main>
+        <section class="main__container">
+            <h2>Calcula el descuento de tus productos </h2>
+            <form>
+                <span class="main__img-des"></span>
+                <label class="label__text" for="InputPrice">Precio:</label>
+                <div class="form__container-input">
+                    <input id="InputPrice" type="number" placeholder="Inserte números..">
+                </div>
 
-            <label class="label__text" for="InputDiscound">Descuento:</label>
-            <div class="form__container-input">
-                <input id="InputDiscound" type="number" placeholder="Inserte números..">
-            </div>
+                <label class="label__text" for="InputDiscound">Descuento:</label>
+                <div class="form__container-input">
+                    <input id="InputDiscound" type="number" placeholder="Inserte números..">
+                </div>
 
-            <button type="button" onclick="onclickButtonPriceDiscount()">
-                Calcular el precio con descuento
-            </button>
+                <button class="form__button" type="button" onclick="onclickButtonPriceDiscount()">
+                    Calcular descuento
+                </button>
 
-            <label class="label__text" for="InputCoupon">Tienes algún CUPON? </label>
-            <div class="form__container-input">
-                <input id="InputCoupon" type="text" placeholder="Inserte CUPON">
-            </div>
+                <label class="label__text" for="InputCoupon">Tienes algún CUPON? </label>
+                <div class="form__container-input">
+                    <input id="InputCoupon" type="text" placeholder="Inserte CUPON">
+                </div>
 
-            <button type="button" onclick="onclickButtonPriceCupon()">
-                Descuento + CUPON
-            </button>
+                <button class="form__button" type="button" onclick="onclickButtonPriceCupon()">
+                    Descuento + CUPON
+                </button>
 
-            <p id="ResultP"></p>
-            <p id="ResultPC"></p>
-        </form>
-    </section>
-
-</main>
+                <p id="ResultP"></p>
+                <p id="ResultPC"></p>
+            
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Licencia</a></li>
+        </ul>
+    </footer>
     
     <script src="./descuentos.js"></script>
 </body>

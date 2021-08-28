@@ -30,3 +30,18 @@ function calcularMediaAritmetica(lista) {
 
     return promedioLista;
 }
+
+
+const lista2 = [
+    100,
+    200,
+    500,
+    4000000000,
+];
+
+const mitadLista2 = lista2.length / 2;
+
+
+if(lista) {
+
+}

@@ -7,8 +7,33 @@
     <title>Promedio-Mediana</title>
 </head>
 <body>
-    <h1>Promedio, Mediana</h1>
+    <header>
+        <h1>Promedio, Mediana , Moda</h1>
+    </header>
+    
+    <main>
+        <h2>Promedio</h2>
+        <section class="main__container">
+            <form class="main__promedio">
+                <label for="InputPromedio"> 
+                    Ingresa valor por valor a promediar 
+                </label>
+                <div>
+                    <input id="InputPromedio" type="text" placeholder="Inserte números...">
+                </div>
+                <button class="form__button-promedio" type="button" onclick="añadirArray()">
+                    Lista de Números
+                </button>
+                <p id="ResAdd"></p>
+                <button class="form__button-promedio" type="button" onclick="calcularMediaAritmetica(lista)">
+                    Promediar
+                </button>
 
+                <p id="ResultadoPromedio"></p>
+
+            </form>
+        </section>
+    </main>
 
     <script src="./promedio.js"></script>
 </body>

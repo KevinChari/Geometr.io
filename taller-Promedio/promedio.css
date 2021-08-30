@@ -24,7 +24,7 @@ html {
 header {
     width: 100%;
     height: auto;
-    background-color: var(--fondo);
+    background-color: var(--colorSupport);
 }
 
 header h1 {
@@ -121,4 +121,20 @@ form .promedio__container-input {
     font-weight: bold;
     line-height: 1.7rem;
     color: #E6EAEF;
+}
+
+#ResAdd {
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: var(--subtitulos);
+    font-weight: 600;
+}
+
+#ResultadoPromedio {
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: var(--subtitulos);
+    font-weight: 600;
 }

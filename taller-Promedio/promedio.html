@@ -5,29 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promedio-Mediana</title>
+    <link rel="stylesheet" href="./promedio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Promedio, Mediana , Moda</h1>
+        <h1>StdiCalc</h1>
     </header>
     
     <main>
-        <h2>Promedio</h2>
         <section class="main__container">
             <form class="main__promedio">
-                <label for="InputPromedio"> 
+                <h2 class="main__title">Promedio</h2>
+
+                <label class="promedio__label" for="InputPromedio"> 
                     Ingresa valor por valor a promediar 
                 </label>
-                <div>
+
+                <div class="promedio__container-input">
                     <input id="InputPromedio" type="text" placeholder="Inserte números...">
                 </div>
-                <button class="form__button-promedio" type="button" onclick="añadirArray()">
-                    Lista de Números
-                </button>
+
+                <div class="promedio__container-button">
+                    <button class="form__button-promedio" type="button" onclick="añadirArray()">
+                        Lista de Números
+                    </button>
+                </div>
+                
                 <p id="ResAdd"></p>
-                <button class="form__button-promedio" type="button" onclick="calcularMediaAritmetica(lista)">
-                    Promediar
-                </button>
+                <div class="promedio__container-button">
+                    <button class="form__button-promedio" type="button" onclick="calcularMediaAritmetica(lista)">
+                        Promediar
+                    </button>
+                </div>
+                
 
                 <p id="ResultadoPromedio"></p>
 

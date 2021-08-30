@@ -29,10 +29,7 @@ function añadirArray() {
   const resultado = document.getElementById("ResAdd");
   //mandamos a llamar el texto que queremos mostrar
   //imprimimos el texto en HTML
-  resultado.innerText =
-    "Listado de números: (" +
-    lista +
-    ") presiona el botón 'Promediar' una vez terminado.";
+  resultado.innerText ="Listado de números: (" + lista + ") presiona el botón 'Promediar' una vez terminado.";
 }
 
 

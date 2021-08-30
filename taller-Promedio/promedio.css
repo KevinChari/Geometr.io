@@ -123,15 +123,12 @@ form .promedio__container-input {
     color: #E6EAEF;
 }
 
-#ResAdd {
-    padding-bottom: 15px;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    color: var(--subtitulos);
-    font-weight: 600;
+form .promedio__container-javascript {
+    width: 80%;
+    height: auto;
 }
 
-#ResultadoPromedio {
+form .promedio__container-javascript p {
     padding-bottom: 15px;
     font-size: 1.5rem;
     line-height: 2.2rem;

@@ -11,6 +11,10 @@ header img {
     width: 300px;
 }
 
+.form__button {
+    cursor: pointer;
+}
+
 .form__button:hover {
     background-color: #111111;
 }

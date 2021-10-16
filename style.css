@@ -13,6 +13,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: var(--subtitulos);
+    margin-bottom: 15px;
+    cursor: -webkit-grabbing;
+}
+
+p:hover {
+    color: var(--bordes);
+}
 
 html {
     font-size: 62.5%;

@@ -8,26 +8,11 @@ function calcularMediaAritmetica(lista) {
             }
         );
     
-        const promedioLista = sumaLista / lista.length;
-    
-        const resultadoPromedio = document.getElementById("");
-        resultadoPromedio.innerText = "El promedio es: " + promedioLista;
+        return sumaLista / lista.length;
     }
 
 
-
-
-
 // MEDIANA
-
-const lista = [
-    100,
-    200,
-    500,
-    4000000000,
-];
-
-const mitadLista = parseInt(lista.length / 2);
 
 
 function esPar(numerito) {
@@ -38,19 +23,30 @@ function esPar(numerito) {
     }
 }
 
-let mediana;
 
-if(esPar(lista.length)) {
-    const elemento1 = lista[mitadLista - 1];
-    const elemento2 = lista[mitadLista];
 
-    const promedioElemento1y2 = calcularMediaAritmetica([
-        elemento1,
-        elemento2,
-    ]);
-   
+function calcularMediana(lista) {
+    const listaOrdenada = lista.sort((a, b) => {
+        return a - b;
+    });
+    const mitadLista = parseInt(listaOrdenada.length / 2);
+    const numeroParOImpar = esPar;
 
-    mediana = promedioElemento1y2;
-} else {
-    mediana = lista[mitadLista];
+
+
+    if(numeroParOImpar(listaOrdenada.length)) {
+        const elemento1 = listaOrdenada[mitadLista - 1];
+        const elemento2 = listaOrdenada [mitadLista];
+    
+        const promedioElemento1y2 = calcularMediaAritmetica([
+            elemento1,
+            elemento2,
+        ]);
+    
+        return promedioElemento1y2;
+    
+    } else {
+        return listaOrdenada[mitadLista];
+    }
+
 }

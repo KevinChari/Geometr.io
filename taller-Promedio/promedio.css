@@ -113,7 +113,7 @@ form .promedio__container-input {
     background-image: linear-gradient(-45deg, var(--colorSupport), var(--buttonBackground));
 }
 
-.promedio__container-button .form__button-promedio {
+.promedio__container-button #form__button-promedio {
     outline: none;
     border: none;
     background-color: transparent;

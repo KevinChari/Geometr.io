@@ -7,7 +7,11 @@ function calcularPrecioConDescuento(precio, descuento) {
     const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
 
 
-    return precioConDescuento;
+    if(precioConDescuento) {
+        return (`El precio con descuento son: $ ${precioConDescuento}.`);
+    }else {
+        return (`Por favor: Ingrese un valor antes de calcular el descuento.`);
+    }
 }
 
 function calcularPrecioConDescuentoCupon(precio, descuento, cupon) {
@@ -15,7 +19,11 @@ function calcularPrecioConDescuentoCupon(precio, descuento, cupon) {
     const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
     const precioConDescuentoCupon = precioConDescuento - cupon;
 
-    return precioConDescuentoCupon;
+    if(precioConDescuentoCupon){
+        return (`El precio TOTAL con CUPON es: $ ${precioConDescuentoCupon}.`);
+    }else {
+        return (`Error: Inserte un cupon válido.`);
+    } 
 }
 
 
@@ -31,7 +39,7 @@ function onclickButtonPriceDiscount() {
     const precioConDescuento = calcularPrecioConDescuento(priceValue, discountValue);
 
     const resultP = document.getElementById("ResultP");
-    resultP.innerText = "El precio con descuento son: $" + precioConDescuento;
+    resultP.innerText = precioConDescuento;
 
 }
 
@@ -67,7 +75,7 @@ function onclickButtonPriceCupon() {
     const precioConDescuentoCupon = calcularPrecioConDescuentoCupon(priceValue1, discountValue1, descuento);
 
     const ResultPC = document.getElementById("ResultPC");
-    ResultPC.innerText = "El precio TOTAL con CUPON es: $" + precioConDescuentoCupon;
+    ResultPC.innerText = precioConDescuentoCupon;
 }
 
 

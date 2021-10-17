@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salarios</title>
+    <link rel="stylesheet" href="./promedio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>StdiCalc</h1>
+    </header>
+    
+    <main>
+        <section class="main__container">
+            <form class="main__promedio">
+                <h2 class="main__title">Salarios</h2>
+
+                <label class="promedio__label" for="InputPromedio"> 
+                    Ingresa valor por valor a promediar 
+                </label>
+
+                <div class="promedio__container-input">
+                    <input id="InputPromedio"  placeholder="Inserte números...">
+                </div>
+
+                <div class="promedio__container-button">
+                    <button id="form__button-promedio" type="button" onclick="calcularMediaAritmeticaPromedio()">
+                        Promediar
+                    </button>
+                </div>
+                
+                <div class="promedio__container-javascript">
+                    <p id="ResultadoPromedio"></p>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
+</body>
+</html>

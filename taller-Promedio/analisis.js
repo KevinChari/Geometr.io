@@ -1,13 +1,4 @@
-const salariosEcu = ecuador.map(
-    function(personita) {
-        return personita.salary;
-});
-
-const salariosEcuSorted = salariosEcu.sort(
-    function(salaryA, salaryB) {
-        return salaryA - salaryB;
-    }
-);
+//Helpers
 
 function esPr(numero) {
     return (numero % 2 === 0);
@@ -24,7 +15,7 @@ function calcularMediaAritmetica(lista) {
     return promedioLista;
 }
 
-
+//Calculadora de Mediana
 function medianaSalarios(lista) {
     const mitad = parseInt(lista.length / 2);
 
@@ -45,4 +36,41 @@ function medianaSalarios(lista) {
     }
 }
 
-console.log(medianaSalarios(salariosEcuSorted));
+//Mediana General
+
+const salariosEcu = ecuador.map(
+    function(personita) {
+        return personita.salary;
+});
+
+const salariosEcuSorted = salariosEcu.sort(
+    function(salaryA, salaryB) {
+        return salaryA - salaryB;
+    }
+);
+
+
+const medianaGeneralEcu = medianaSalarios(salariosEcuSorted);
+
+//Meidana del TOP 10%
+
+/* const arrayEjemplo = [0, 1, 2, 3, 4, 5 ||| 6, 7 ||| 8, 9, 10];
+const arrayEjemplo = [0, 1, 2, 3, 4, 8, 9, 10]; //Lo desaprace
+const ejemplo = arrayEjemplo.splice(5, 2) // ||| 6, 7 ||| esto va a quedar guardao en el arrayEjemplo [6, 7] */
+
+
+const spliceStart = (salariosEcuSorted.length * 90) / 100;
+const spliceCount = salariosEcuSorted.length - spliceStart;
+
+const salarioEcuTop10 = salariosEcuSorted.splice(
+    spliceStart,
+    spliceCount,
+);
+
+const medianaTop10Ecu = medianaSalarios(salarioEcuTop10);
+
+
+console.log({
+    medianaGeneralEcu,
+    medianaTop10Ecu,
+});

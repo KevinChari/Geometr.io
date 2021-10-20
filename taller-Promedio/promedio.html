@@ -21,22 +21,27 @@
                 <h2 class="main__title">Promedio</h2>
 
                 <label class="promedio__label" for="InputPromedio"> 
-                    Ingresa valor por valor a promediar 
+                    Ingresa valor y agrega a lista. 
                 </label>
 
                 <div class="promedio__container-input">
                     <input id="InputPromedio"  placeholder="Inserte números...">
                 </div>
 
-                <div class="promedio__container-button">
-                    <button id="form__button-promedio" type="button" onclick="calcularMediaAritmeticaPromedio()">
-                        Promediar
-                    </button>
-                </div>
+            
+                <button id="form__button-promedio" type="button" onclick="añadirArray()">
+                    Agregar a Lista
+                </button>
                 
-                <div class="promedio__container-javascript">
-                    <p id="ResultadoPromedio"></p>
-                </div>
+                <div id="value__list"></div>
+
+                <button id="form__button-promedio" type="button" onclick="calcularMediaAritmeticaPromedio()">
+                    Promediar
+                </button>
+              
+                
+                <p id="ResultadoPromedio"></p>
+                
 
             </form>
         </section>

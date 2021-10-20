@@ -37,28 +37,40 @@ function calcularMediaAritmeticaPromedio() {
 } */
 
 
+let lista = [];
+
+function añadirArray() {
+  const inputNumero = document.getElementById("InputPromedio");
+  const numero = Number(inputNumero.value);
+  const añadirNumero = lista.push(numero);
+  const resultado = document.getElementById("value__list");
+  resultado.innerText = `${lista}`;
+}
+
+
+function calcularMediaAritmeticaPromedio() {
+    const sumalista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
+      return valorAcumulado + nuevoElemento;
+    });
+    const promedioLista = sumalista / lista.length;
+    const resultado = document.getElementById("ResultadoPromedio");
+    resultado.innerText = "El promedio es: " + promedioLista;
+  }
 
 
 
-
-let lista1 = [];
-
-
-
-function calcularMediaAritmetica(lista) {
-    
-    /* let sumaLista = 0;
+/* function calcularMediaAritmetica(lista) {
+    let sumaLista = 0;
     for (let i = 0; i < lista.length; i++) {
         sumaLista = sumaLista + lista[i];
         
-    } */
-
+    }
     const sumaLista = lista.reduce(
         function(valorAcumulado = 0, nuevoElemento) {
             return valorAcumulado + nuevoElemento;
     });
     
-    const promedioLista = sumaLista / lista.length;
+    const promedioLista = parseInt(sumaLista / lista.length);
 
     return promedioLista;
-}
+} */

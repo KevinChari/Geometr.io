@@ -1,10 +1,9 @@
-
 :root {
     --titulos:#181839;
     --subtitulos:#0a1e65;
-    --bordes: #2f71ec;
-    --buttonBackground: #253fbe;
-    --colorSupport: #39b4fe;
+    --bordes: #612fec;
+    --buttonBackground: #5325be;
+    --colorSupport: #ac39fe;
     --fondo: #abf0f9;
     --fondo2: #b3abf9;   
 }
@@ -101,6 +100,10 @@ form .promedio__container-input {
     color: #5a5a5a;
 }
 
+form .promedio__container-input:hover {
+    box-shadow: 0px 1px 10px 1px #c0b2dd ;
+}
+
 .promedio__container-input input {
     width: 80%;
     height: 23px;
@@ -116,7 +119,7 @@ form .promedio__container-input {
     padding: 0.8em 1.6em;
     margin-bottom: 15px;
     border-radius: 0.2666666667rem;
-    box-shadow: 0 3px 0 0 #1139cc, 0 4px 4px -1px rgb(0 0 0 / 60%), 0 4px 6px 1px rgb(0 0 0 / 30%), 0 1px 2px 1px rgb(0 0 0 / 0%) inset, 0 18px 32px -2px rgb(255 255 255 / 10%) inset;
+    box-shadow: 0 3px 0 0 #4311cc, 0 4px 4px -1px rgb(0 0 0 / 60%), 0 4px 6px 1px rgb(0 0 0 / 30%), 0 1px 2px 1px rgb(0 0 0 / 0%) inset, 0 18px 32px -2px rgb(255 255 255 / 10%) inset;
     background-image: linear-gradient(-45deg, var(--colorSupport), var(--buttonBackground));
     border: none;
     font-size: 1.3rem;
@@ -127,7 +130,7 @@ form .promedio__container-input {
 }
 
 #form__button-promedio:hover {
-    box-shadow: 0 3px 0 0 #0e39d4, 0 6px 4px -1px rgb(0 0 0 / 10%), 0 4px 16px rgb(0 0 0 / 10%), 0 1px 2px 1px rgb(0 0 0 / 0%) inset, 0 18px 32px -2px rgb(255 255 255 / 14%) inset;
+    box-shadow: 0 3px 0 0 #4311cc, 0 6px 4px -1px rgb(0 0 0 / 10%), 0 4px 16px rgb(0 0 0 / 10%), 0 1px 2px 1px rgb(0 0 0 / 0%) inset, 0 18px 32px -2px rgb(255 255 255 / 14%) inset;
 }
 
 #form__button-promedio:active {

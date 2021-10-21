@@ -15,6 +15,16 @@ function calcularMediaAritmetica(lista) {
 // MEDIANA
 
 
+let lista = [];
+
+function añadirArray() {
+  const inputNumero = document.getElementById("InputPromedio");
+  const numero = Number(inputNumero.value);
+  const añadirNumero = lista.push(numero);
+  const resultado = document.getElementById("value__list");
+  resultado.innerText = `${lista}`;
+}
+
 function esPar(numerito) {
     if (numerito % 2 === 0) {
         return true;
@@ -25,7 +35,8 @@ function esPar(numerito) {
 
 
 
-function calcularMediana(lista) {
+
+function calcularMediana() {
     const listaOrdenada = lista.sort((a, b) => {
         return a - b;
     });

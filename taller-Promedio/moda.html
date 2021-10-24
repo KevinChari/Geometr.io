@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moda</title>
-    <link rel="stylesheet" href="./promedio.css">
+    <link rel="stylesheet" href="./moda.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
@@ -21,22 +21,26 @@
                 <h2 class="main__title">Moda</h2>
 
                 <label class="promedio__label" for="InputPromedio"> 
-                    Ingresa valor por valor a promediar 
+                    Ingresa valor por valor y agrega a lista: 
                 </label>
 
                 <div class="promedio__container-input">
-                    <input id="InputPromedio"  placeholder="Inserte números...">
+                    <input id="InputPromedio" type="number" placeholder="Inserte números...">
                 </div>
 
-                <div class="promedio__container-button">
-                    <button id="form__button-promedio" type="button" onclick="calcularMediaAritmeticaPromedio()">
-                        Promediar
-                    </button>
-                </div>
+            
+                <button id="form__button-promedio" type="button" onclick="añadirArray()">
+                    Agregar a Lista
+                </button>
                 
-                <div class="promedio__container-javascript">
-                    <p id="ResultadoPromedio"></p>
-                </div>
+                <div id="value__list"></div>
+
+                <button id="form__button-promedio" type="button" onclick="calcularModa()">
+                    Calcular Moda
+                </button>
+              
+                
+                <p id="ResultadoModa"></p>
 
             </form>
         </section>

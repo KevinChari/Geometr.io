@@ -44,7 +44,6 @@ function calcularMediana() {
     const numeroParOImpar = esPar;
 
 
-
     if(numeroParOImpar(listaOrdenada.length)) {
         const elemento1 = listaOrdenada[mitadLista - 1];
         const elemento2 = listaOrdenada [mitadLista];
@@ -53,11 +52,14 @@ function calcularMediana() {
             elemento1,
             elemento2,
         ]);
-    
-        return promedioElemento1y2;
+        const resultado = document.getElementById("ResultadoPromedio");
+        resultado.innerText = `La mediana es: ${promedioElemento1y2}`;
+        /* return promedioElemento1y2; */
     
     } else {
-        return listaOrdenada[mitadLista];
+        const resultado = document.getElementById("ResultadoPromedio");
+        resultado.innerText =`La mediana es: ${listaOrdenada[mitadLista]}`;
+        /* return listaOrdenada[mitadLista]; */
     }
-
+    
 }
